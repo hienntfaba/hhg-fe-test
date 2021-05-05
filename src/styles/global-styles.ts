@@ -8,7 +8,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: ${props => props.theme.fonts.primary};
+    font-size: ${props => props.theme.fontSizes.body};
   }
 
   #root {
@@ -18,8 +19,8 @@ export const GlobalStyle = createGlobalStyle`
 
   p,
   label {
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    line-height: 1.5em;
+    font-family: ${props => props.theme.fonts.secondary};
+    line-height: ${props => props.theme.lineHeights.body};
   }
 
   input, select {
