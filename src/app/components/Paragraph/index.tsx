@@ -24,7 +24,7 @@ const P = styled.p`
 `;
 
 const Span = styled.span`
-  font-family: ${props => props.theme.fonts.secondary};
+  font-family: ${props => props.theme.fonts.primary};
   font-weight: ${props => props.theme.fontWeights.regular};
   ${color};
   ${space};

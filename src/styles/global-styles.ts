@@ -19,7 +19,7 @@ export const GlobalStyle = createGlobalStyle`
 
   p,
   label {
-    font-family: ${props => props.theme.fonts.secondary};
+    font-family: ${props => props.theme.fonts.primary};
     line-height: ${props => props.theme.lineHeights.body};
   }
 
