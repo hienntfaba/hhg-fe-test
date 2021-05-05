@@ -15,6 +15,7 @@ import { queryString } from '../../../utils/history';
 import { DEFAULT_PAGE_SIZE } from '../../../constants/paginate';
 import { Button } from '../../components/Button';
 import { AddEmployeeModal } from '../../components/AddEmployeeModal';
+import { ToastAlert } from 'services/alert.service';
 
 interface Props {}
 
@@ -57,6 +58,7 @@ export function EmployeePage(props: Props) {
 
   React.useEffect(() => {
     if (isAddEmployeeSuccessfully) {
+      ToastAlert.success('Add employee successfully');
       dispatch(
         actions.getEmployees({ page: filter.page, size: DEFAULT_PAGE_SIZE }),
       );
